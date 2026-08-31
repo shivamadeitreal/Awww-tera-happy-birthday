@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Ayushi ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background: #160d25;
+}
+
+/* Main background */
+.page {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 105, 180, 0.35), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(150, 100, 255, 0.30), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(255, 160, 100, 0.25), transparent 35%),
+        linear-gradient(135deg, #160d25, #28113d, #41142f);
+}
+
+/* Floating hearts and stars */
+.particle {
+    position: fixed;
+    bottom: -20px;
+    pointer-events: none;
+    animation: floatUp linear infinite;
+    opacity: 0.7;
+    z-index: 2;
+    font-size: 20px;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.7) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-110vh) scale(1.2) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Every section */
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+/* Opening */
+.hero {
+    text-align: center;
+    flex-direction: column;
+}
+
+.small-text {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(60px, 15vw, 110px);
+    line-height: 1;
+
+    background: linear-gradient(
+        90deg,
+        #ffd1e8,
+        #ffffff,
+        #ffd0a8
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 8px rgba(255, 150, 200, 0.3));
+    }
+
+    to {
+        filter: drop-shadow(0 0 25px rgba(255, 150, 200, 0.8));
+    }
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 25px auto;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #f9eaf5;
+}
+
+.start-btn {
+    margin-top: 20px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #ff6fae,
+        #a56cff
+    );
+
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(255, 80, 160, 0.3);
+
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    transform: translateY(-4px) scale(1.04);
+}
+
+/* Birthday section */
+.birthday {
+    text-align: center;
+    flex-direction: column;
+}
+
+.birthday h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(48px, 10vw, 85px);
+    color: #ffd5e8;
+    margin-bottom: 20px;
+}
+
+.birthday-message {
+    max-width: 720px;
+    font-size: 17px;
+    line-height: 2;
+    color: #f9eaf5;
+}
+
+/* Birthday cake */
+.cake {
+    position: relative;
+    width: 170px;
+    height: 130px;
+    margin: 45px auto 30px;
+}
+
+.layer {
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #ff8fbd,
+        #ff5d9d
+    );
+
+    left: 0;
+
+    box-shadow:
+        inset 0 -8px rgba(150, 30, 90, 0.12);
+}
+
+.layer:nth-child(1) {
+    bottom: 0;
+}
+
+.layer:nth-child(2) {
+    bottom: 38px;
+    width: 145px;
+    left: 12px;
+}
+
+.layer:nth-child(3) {
+    bottom: 76px;
+    width: 115px;
+    left: 27px;
+}
+
+.candle {
+    position: absolute;
+    width: 9px;
+    height: 35px;
+    background: #ffe9a8;
+    top: -35px;
+    left: 80px;
+    border-radius: 5px;
+}
+
+.flame {
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    background: #ffd166;
+
+    border-radius: 50% 50% 50% 0%;
+
+    transform: rotate(-45deg);
+
+    top: -53px;
+    left: 77px;
+
+    box-shadow: 0 0 20px #ffb347;
+
+    animation: flicker 0.7s infinite alternate;
+}
+
+@keyframes flicker {
+    from {
+        transform: rotate(-45deg) scale(0.9);
+    }
+
+    to {
+        transform: rotate(-45deg) scale(1.1);
+    }
+}
+
+/* Photo section */
+.memory {
+    flex-direction: column;
+    text-align: center;
+}
+
+.memory h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #ffd5e8;
+    margin-bottom: 30px;
+}
+
+.photo-frame {
+    width: min(85vw, 380px);
+    padding: 10px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #ff8fbd,
+        #9b6cff,
+        #ffd18b
+    );
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+
+    transform: rotate(-2deg);
+
+    transition: 0.5s;
+}
+
+.photo-frame:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.photo-frame img {
+    width: 100%;
+    display: block;
+    border-radius: 18px;
+}
+
+/* Tafree section */
+.tafree {
+    text-align: center;
+    flex-direction: column;
+}
+
+.tafree-card {
+    max-width: 720px;
+
+    padding: 45px 30px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.tafree-card .heart {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.tafree-card p {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(30px, 6vw, 48px);
+    line-height: 1.4;
+    color: #ffe0ee;
+}
+
+/* Final section */
+.final {
+    text-align: center;
+    flex-direction: column;
+}
+
+.final h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(55px, 11vw, 90px);
+    color: #ffd5e8;
+}
+
+.final p {
+    max-width: 650px;
+    margin-top: 25px;
+
+    line-height: 2;
+
+    font-size: 17px;
+
+    color: #f9eaf5;
+}
+
+.signature {
+    margin-top: 35px;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 35px;
+
+    color: #ffc6df;
+}
+
+/* Music button */
+.music-btn {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    z-index: 20;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    section {
+        padding: 50px 18px;
+    }
+
+    .hero p,
+    .birthday-message,
+    .final p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .tafree-card {
+        padding: 35px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- Floating decorations -->
+
+    <div class="particle" style="left:5%; animation-duration:12s;">♡</div>
+    <div class="particle" style="left:12%; animation-duration:16s; animation-delay:2s;">✦</div>
+    <div class="particle" style="left:22%; animation-duration:13s; animation-delay:4s;">♥</div>
+    <div class="particle" style="left:35%; animation-duration:18s; animation-delay:1s;">✧</div>
+    <div class="particle" style="left:48%; animation-duration:14s; animation-delay:5s;">♡</div>
+    <div class="particle" style="left:60%; animation-duration:17s; animation-delay:3s;">✦</div>
+    <div class="particle" style="left:73%; animation-duration:12s; animation-delay:6s;">♥</div>
+    <div class="particle" style="left:85%; animation-duration:16s; animation-delay:2s;">✧</div>
+    <div class="particle" style="left:94%; animation-duration:14s; animation-delay:4s;">♡</div>
+
+
+    <!-- Opening -->
+
+    <section class="hero">
+
+        <div class="small-text">
+            A little something for you...
+        </div>
+
+        <h1>
+            Hey, Ayushi ❤️
+        </h1>
+
+        <p>
+            I was going to simply wish you a happy birthday...
+            <br>
+            but then I remembered that you're not exactly
+            someone who deserves a simple wish.
+        </p>
+
+        <button
+            class="start-btn"
+            onclick="scrollToBirthday()">
+
+            I made this for you ✨
+
+        </button>
+
+    </section>
+
+
+    <!-- Birthday -->
+
+    <section
+        class="birthday"
+        id="birthday">
+
+        <h2>
+            Happy Birthday, Beautiful! 🎂
+        </h2>
+
+        <div class="cake">
+
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+
+            <div class="candle"></div>
+
+            <div class="flame"></div>
+
+        </div>
+
+        <p class="birthday-message">
+
+            Today is about celebrating you...
+            the person who somehow manages to make ordinary moments
+            feel a little less ordinary.
+
+            <br><br>
+
+            I hope this year brings you the kind of happiness
+            that stays, the kind of smiles that don't need a reason,
+            and countless moments that you'll want to remember forever.
+
+            <br><br>
+
+            And selfishly, I hope I get to be part of quite a few
+            of those moments. ❤️
+
+        </p>
+
+    </section>
+
+
+    <!-- Photo -->
+
+    <section class="memory">
+
+        <h2>
+            One Little Memory 📸
+        </h2>
+
+        <div class="photo-frame">
+
+            <img
+                src="YOUR_PHOTO_HERE.jpg"
+                alt="A beautiful memory">
+
+        </div>
+
+        <p style="
+            margin-top:30px;
+            max-width:600px;
+            line-height:1.8;
+        ">
+
+            One picture isn't nearly enough to capture everything,
+            but I thought this one deserved a little place here.
+
+        </p>
+
+    </section>
+
+
+    <!-- Tafree -->
+
+    <section class="tafree">
+
+        <div class="tafree-card">
+
+            <div class="heart">
+                💗
+            </div>
+
+            <p>
+
+                Some places are just places...
+                until the right person makes them memories.
+
+            </p>
+
+            <br>
+
+            <p style="
+                font-size:22px;
+                color:#f8d8e8;
+            ">
+
+                And honestly, I really miss those little moments
+                of doing absolutely nothing and somehow having
+                the best time with you at Tafree.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final message -->
+
+    <section class="final">
+
+        <h2>
+            For You, Ayushi ❤️
+        </h2>
+
+        <p>
+
+            I don't know what the coming year has planned for you,
+            but I hope it is kind to you.
+
+            <br><br>
+
+            Keep smiling that beautiful smile.
+            Keep being the wonderfully annoying, adorable,
+            and completely unforgettable person you are.
+
+            <br><br>
+
+            And if life ever gets a little too serious,
+            remember that somewhere out there is someone
+            who would still choose to spend another random
+            evening laughing with you over absolutely nothing.
+
+            <br><br>
+
+            Happy Birthday, Ayushi.
+
+            <br>
+
+            You are, and will always be,
+            a little more special to me than I know how to explain. ❤️
+
+        </p>
+
+        <div class="signature">
+            With love ❤️
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- Music button -->
+
+<button
+    class="music-btn"
+    onclick="toggleMusic()"
+    id="musicButton">
+
+    🎵
+
+</button>
+
+
+<audio
+    id="music"
+    loop>
+
+    <source
+        src="YOUR_MUSIC_HERE.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+<script>
+
+function scrollToBirthday() {
+
+    document
+        .getElementById("birthday")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+let musicPlaying = false;
+
+
+function toggleMusic() {
+
+    const music =
+        document.getElementById("music");
+
+    const button =
+        document.getElementById("musicButton");
+
+
+    if (musicPlaying) {
+
+        music.pause();
+
+        button.innerHTML = "🎵";
+
+        musicPlaying = false;
+
+    } else {
+
+        music.play();
+
+        button.innerHTML = "🔊";
+
+        musicPlaying = true;
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
